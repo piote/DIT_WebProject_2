@@ -2,21 +2,28 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <title>계산기</title>
 </head>
 <body>
-	<h1>계산기</h1>
-	<hr>
-	<form name=form1 method=post action="Calc">
-		<input type="text" name="num1" width="200" size="5"> 
-			<select name="Mid"> <option selected>+</option> 
-				<option>-</option> 
-				<option>*</option> 
-				<option>/</option> 
-			</select>
-		<input type="text" name="num2" width="200" size="5">
-		<input type="submit" value="계산"> 
-		<input type="reset" value="다시입력"> 
-	</form> 
+	<div class="container">
+		<h1>계산기</h1>
+		<hr>
+		<form name=form1 method=post action="Calc">
+			숫자1 <input type="text" name="num1" width="200" size="5"> 
+				<select name="Mid" class="btn btn-success"> <option selected>+</option> 
+					<option>-</option> 
+					<option>*</option> 
+					<option>/</option> 
+				</select>
+			숫자2 <input type="text" name="num2" width="200" size="5">
+			<input type="submit" class="btn btn-primary" value="계산"> 
+			<input type="reset" class="btn btn-primary" value="재입력"> 
+		</form> 
+	</div>
 </body>
 </html>
